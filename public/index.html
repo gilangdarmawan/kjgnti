@@ -4,11 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content=#cde8d4 name=msapplication-TileColor>
+    <meta content="KOPJAGANTI lahir didorong oleh Partai Demokrasi Indonesia (PDI) Perjuangan dengan tujuan untuk menjadi mitra kerja Pemerintah Indonesia dalam meningkatkan kesejahteraan hidup masyarakat yang bekerja disektor Pertanian dan Perikanan." name=description>
 
     <title>
       KOPJA GANTI - Koperasi Jasa Gerakan Tani dan Nelayan Indonesia
     </title>
 
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -21,7 +25,7 @@
     <script defer src="/__/firebase/init.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand mr-0" href="#">
                 <img src="./assets/img/logo.png" alt="KOPJA GANTI logo">
@@ -32,32 +36,36 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Latar Belakang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kompetensi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kepengurusan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Mitra Kerja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Aktivitas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                    <!-- <li class="nav-item d-none"><a class="nav-link" href="#coverPage">Cover Page</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#latarBelakang">Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#visiMisi">Visi dan Misi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kompetensi">Kompetensi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#strukturOrganisasi">Kepengurusan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mitraKerja">Mitra Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aktivitas">Aktivitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./assets/img/banner.jpeg" alt="Cover Image">
-                <div class="carousel-caption d-none d-md-flex">
-                    <small>Selamat Datang di Website</small>
-                    <h1 class="text-uppercase">Koperasi Jasa Gerakan&nbsp;Nelayan&nbsp;Tani Indonesia</h1>
-                    <a href="#" class="btn-radius">
-                            <i class="fas fa-chevron-down fa-lg"></i>
-                    </a>
+    
+    <div class="wrapper" id="content">
+        <section id="coverPage">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/banner.jpeg" alt="Cover Image">
+                        <div class="carousel-caption d-none d-md-flex">
+                            <small>Selamat Datang di Website</small>
+                            <h1 class="text-uppercase">Koperasi Jasa Gerakan&nbsp;Nelayan&nbsp;Tani Indonesia</h1>
+                            <a href="#latarBelakang" class="btn-radius">
+                                <i class="fas fa-chevron-down fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="wrapper">
+        </section>
         <section id="latarBelakang">
             <div class="section-latar-belakang">
                 <div class="container">
@@ -312,7 +320,7 @@
                 <div class="title mb-5">Aktivitas</div>
                 <div class="card-deck">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan1.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan1.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Launching Desa Terang dilaksanakan di desa Kerawansasi, Kec. Natar Lampung
                                 Selatan Lounching dilakukan oleh Ketua Umum Kopja Ganti Bapak Dadang Mishal
@@ -325,10 +333,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan2.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan2.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Ketua Umum KOPJA GANTI mensosialisasikan Smart Card di Kabupaten
-                                Banyuwangi  
+                                Banyuwangi
                             </p>
                         </div>
                         <div class="card-footer">
@@ -336,9 +344,9 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan3.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan3.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Bersama Pembina Ganti… Menetapkan 100 Juta Orang Di Sektor Pertanian
+                            <p class="card-text">Bersama Pembina Ganti Menetapkan 100 Juta Orang Di Sektor Pertanian
                                 &amp; Perikanan sebagai sasaran program KOPJAGANTI
                             </p>
                         </div>
@@ -347,7 +355,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan4.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan4.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Pembina ganti dan ketua umum KOPJA GANTI ke Provinsi
                                 Bengkulu ke tempat tinggal Bung Karno
@@ -358,7 +366,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan5.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan5.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Rapat Koordinasi Nasional Bidang Kemaritiman DPP PDI-P
                                 Pemberdayaan Petani &amp; Nelayan Melalui Program KUR-UKM
@@ -371,9 +379,9 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan6.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan6.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">RAKORNAS BIDANG KEMARITIMAN DPP PDI-P DIRESMIKAN OLEH MENKO PMK 
+                            <p class="card-text">RAKORNAS BIDANG KEMARITIMAN DPP PDI-P DIRESMIKAN OLEH MENKO PMK
                             </p>
                         </div>
                         <div class="card-footer">
@@ -381,7 +389,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan7.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan7.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">RAPAT KONSULTASI BERSAMA MENTERI KOPERASI-UKM BAPAK PUSPA
                                 YOGA TENTANG PROGRAM KUR
@@ -392,7 +400,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan8.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan8.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">RAPAT KONSULTASI &amp; PRESENTASI TEKNOLOGI SMART FISHERY BERSAMA
                                 GUBERNUR PROVINSI JAWA TENGAH, SEBAGAI LOKASI PILOT PROJECT
@@ -403,7 +411,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan9.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan9.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">RAPAT KONSULTASI BERSAMA DIREKSI BANK BRI TENTANG PROGRAM KUR-
                                 UKM &amp; KOPJA GANTI
@@ -414,7 +422,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan10.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan10.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">KETUA UMUM KOPJA GANTI UPACARA PELANTIKAN PENGURUS KOPJA
                                 GANTI PROV. BENGKULU
@@ -425,7 +433,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan11.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan11.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">KETUM KOPJA GANTI, BUPATI SANGIHE, SKPD &amp; PT MARLIN DALAM
                                 PERSIAPAN PELAKSANAAN PILOT PROJECT BERDAMPAK NASIONAL (PPDN)
@@ -437,7 +445,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan12.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan12.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">KETUA UMUM KOPJAGANTI BERSAMA IBU MEGAWATI SP DI PAMERAN
                                 PRODUK2 UNGGULAN PT SIDOMUNCUL
@@ -448,9 +456,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/kegiatan13.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/kegiatan/kegiatan13.png" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Sosialisasi Program Smart Card di Kabupaten Banyuwangi dengan pilot project 5000
+                            <p class="card-text">Sosialisasi Program Smart Card di Kabupaten Banyuwangi dengan pilot
+                                project 5000
                                 peserta tahun 2018/2019
                             </p>
                         </div>
@@ -463,43 +472,44 @@
         </section>
         <section id="kontak">
             <footer>
-                    <div class="container">
-                       
-                            <div class="row">
-                                <div class="col-md-6">
-                                        <div class="d-flex">
-                                                <i class="fas fa-building mt-2 mr-3"></i>
-                                                <address>Jl. TB. Simatupang Gd. Manhattan Square<br/>Kav.1 Blok S, Lantai 23<br/>Jakarta
-                                                        Selatan</address>
-                                            </div>
-                                            <div class="d-flex">
-                                                <i class="fas fa-phone mt-2 mr-3"></i>
-                                                <a href="tel:+622129407182">021-29407182</a>
-                                            </div>
-                                            <div class="d-flex">
-                                                <i class="fas fa-envelope mt-2 mr-3"></i>
-                                                <a href="mailto:info@kjg-id">info@kjg-id</a>
-                                                <p></p>
-                                            </div>
-                                </div>
-
-                                <div class="col-md-6 text-right">
-                                        <div class="title">
-                                                Koperasi Jasa<br/>Gerakan Nelayan Tani Indonesia<br/>(KOPJA GANTI)
-                                        </div>
-                                    <small>&copy;2018 KOPJA GANTI</small>
-                                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-building mt-2 mr-3"></i>
+                                <address>Jl. TB. Simatupang Gd. Manhattan Square<br />Kav.1 Blok S, Lantai 23<br />Jakarta
+                                    Selatan</address>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-phone mt-2 mr-3"></i>
+                                <a href="tel:+622129407182">021-29407182</a>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-envelope mt-2 mr-3"></i>
+                                <a href="mailto:info@kjg-id">info@kjg-id</a>
+                                <p></p>
                             </div>
                         </div>
+    
+                        <div class="col-md-6 text-right">
+                            <div class="title">
+                                Koperasi Jasa<br />Gerakan Nelayan Tani Indonesia<br />(KOPJA GANTI)
+                            </div>
+                            <small>&copy;2018 KOPJA GANTI</small>
+                        </div>
+                    </div>
+                </div>
             </footer>
-            
+    
         </section>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js></script>
+    <script src=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js></script>
+    <script src="./js/custom.min.js"></script>
   </body>
 </html>

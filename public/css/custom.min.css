@@ -9,6 +9,8 @@ nav.navbar .container {
   height: auto;
   width: 100%;
   max-width: 12rem;
+  -webkit-transition: max-width 0.25s;
+  transition: max-width 0.25s;
 }
 .navbar-expand-lg .navbar-collapse {
   width: 100%;
@@ -20,6 +22,19 @@ nav.navbar .container {
 .navbar-expand-lg .navbar-nav .nav-link {
   text-transform: uppercase;
   font-weight: bold;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #e41e22 !important;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.navbar.box-shadow {
+  -webkit-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.6);
 }
 h1 {
   font-weight: 600;
@@ -61,17 +76,18 @@ h1 {
   background: transparent;
   color: #fff;
   display: flex;
-    justify-content: center;
-    align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
-.btn-radius:hover, .btn-radius:focus {
+.btn-radius:hover,
+.btn-radius:focus {
   background: #fff;
   color: #e51d23;
   text-decoration: none;
   box-shadow: none;
 }
-#latarBelakang .section-latar-belakang, #kontak {
+#latarBelakang .section-latar-belakang,
+#kontak {
   background: #e51d23;
   background: linear-gradient(30deg, #e51d23 0%, #e4974e 100%);
   color: #fff;
@@ -96,34 +112,64 @@ h1 {
 #aktivitas .card {
   text-align: center;
 }
-footer address, footer a {
-    color: #fff;
-    line-height: 2rem;
+footer address,
+footer a {
+  color: #fff;
+  line-height: 2rem;
 }
-footer a:hover, footer a:focus {
-    color: #fff;
+footer a:hover,
+footer a:focus {
+  color: #fff;
 }
 footer .title {
-    border-color: #fff;
-    width: fit-content;
-    font-weight: normal;
-    line-height: 1.85rem;
-    font-size: 1.2rem;
-    padding: 0 0 0.5rem;
-    margin-right: 0;
+  border-color: #fff;
+  width: fit-content;
+  font-weight: normal;
+  line-height: 1.85rem;
+  font-size: 1.2rem;
+  padding: 0 0 0.5rem;
+  margin-right: 0;
+}
+.card-deck {
+    justify-content: center;
+}
+.card-deck .card {
+  margin-bottom: 3rem;
 }
 @media (min-width: 576px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px);
+  }
 }
 
 @media (min-width: 768px) {
-  section:not(#latarBelakang),
+  section:not(#latarBelakang):not(#coverPage),
   .section-latar-belakang {
     padding-top: 4.375rem;
     padding-bottom: 4.375rem;
   }
+
+  .card-deck .card {
+    flex: 0 0 calc(50% - 30px);
+  }
 }
 
 @media (min-width: 992px) {
+  .navbar.box-shadow .navbar-brand {
+    margin: 0.5rem 0;
+  }
+  .navbar.box-shadow .navbar-brand img {
+    max-width: 5rem;
+  }
+
+  #content {
+    position: relative;
+    top: 18.125rem;
+  }
+
+  .card-deck .card {
+    flex: 0 0 calc(33.3333333333% - 30px);
+  }
 }
 
 @media (min-width: 1200px) {
