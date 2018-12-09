@@ -1,0 +1,133 @@
+nav.navbar .container {
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.navbar .navbar-brand {
+  margin: 1rem 0;
+}
+.navbar .navbar-brand img {
+  height: auto;
+  width: 100%;
+  max-width: 12rem;
+}
+.navbar-expand-lg .navbar-collapse {
+  width: 100%;
+}
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1 {
+  font-weight: 600;
+}
+.title {
+  border-bottom: 2px solid #e41e22;
+  padding: 0 0.5rem 0.35rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: max-content;
+  margin: 0 auto 1rem;
+}
+.carousel-item:after {
+  display: block;
+  position: absolute;
+  background-color: #e51d23;
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+}
+.carousel-caption {
+  top: 0;
+  right: 5%;
+  bottom: 0;
+  left: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn-radius {
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid #fff;
+  padding: 1rem 0.5rem;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-radius:hover, .btn-radius:focus {
+  background: #fff;
+  color: #e51d23;
+  text-decoration: none;
+  box-shadow: none;
+}
+#latarBelakang .section-latar-belakang, #kontak {
+  background: #e51d23;
+  background: linear-gradient(30deg, #e51d23 0%, #e4974e 100%);
+  color: #fff;
+}
+.section-latar-belakang .container {
+  margin: 3.5rem auto;
+}
+.section-latar-belakang .title {
+  border-color: #fff;
+  padding: 0 0 0.35rem;
+}
+#kompetensi img {
+  max-width: 6.5rem !important;
+  margin: 1rem 0 2rem;
+}
+#kompetensi h4 {
+  min-height: 3.375rem;
+}
+#mitraKerja .img-fluid {
+  max-height: 6rem;
+}
+#aktivitas .card {
+  text-align: center;
+}
+footer address, footer a {
+    color: #fff;
+    line-height: 2rem;
+}
+footer a:hover, footer a:focus {
+    color: #fff;
+}
+footer .title {
+    border-color: #fff;
+    width: fit-content;
+    font-weight: normal;
+    line-height: 1.85rem;
+    font-size: 1.2rem;
+    padding: 0 0 0.5rem;
+    margin-right: 0;
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  section:not(#latarBelakang),
+  .section-latar-belakang {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  section:not(#kompetensi) .container {
+    max-width: 960px;
+  }
+}

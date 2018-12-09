@@ -10,7 +10,10 @@
     </title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.min.css">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.7.0/firebase-app.js"></script>
@@ -18,112 +21,105 @@
     <script defer src="/__/firebase/init.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand mr-0" href="#">
+                <img src="./assets/img/logo.png" alt="KOPJA GANTI logo">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Latar Belakang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kompetensi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kepengurusan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mitra Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aktivitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                        Search
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/cover-img.jpeg" alt="Cover Image">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-uppercase">Koperasi Jasa Gerakan Nelayan Tani Indonesia</h5>
-                    <button class="btn btn-primary">Selengkapnya</button>
+                <img class="d-block w-100" src="./assets/img/banner.jpeg" alt="Cover Image">
+                <div class="carousel-caption d-none d-md-flex">
+                    <small>Selamat Datang di Website</small>
+                    <h1 class="text-uppercase">Koperasi Jasa Gerakan&nbsp;Nelayan&nbsp;Tani Indonesia</h1>
+                    <a href="#" class="btn-radius">
+                            <i class="fas fa-chevron-down fa-lg"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="wrapper">
         <section id="latarBelakang">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h4>Latar Belakang</h4>
+            <div class="section-latar-belakang">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="title">Latar<br />Belakang</div>
+                        </div>
+                        <div class="col-lg-8 text-justify">
     
+                            <p>
+                                KOPJAGANTI lahir didorong oleh Partai Demokrasi Indonesia
+                                (PDI) Perjuangan dengan tujuan untuk menjadi mitra kerja
+                                Pemerintah Indonesia dalam meningkatkan kesejahteraan hidup
+                                masyarakat yang bekerja disektor Pertanian dan Perikanan.
+                            </p>
+                            <p>
+                                KOPJAGANTI merupakan lembaga otonom dari Organisasi
+                                Masyarakat Gerakan Nelayan Tani Indonesia (GANTI), yang
+                                merupakan bagian dari Komunitas Juang dari PDI-Perjuangan,
+                                yang peduli terhadap peningkatan produksi pangan, khususnya
+                                komoditas strategis seperti beras, jagung, kedelai, gula, daging,
+                                ikan, sayuran, buah-buahan, minyak goreng dan garam secara
+                                efisien, adil dan berkelanjutan, melalui intensifikasi, ekstensifikasi
+                                dan diversifikasi.
+                            </p>
+                            <p>
+                                Potensi georafis Indonesia yang memiliki kekayaan sumberdaya
+                                alam melimpah di sektor kelautan dan pertanian tersebut
+                                menjadikan KOPJAGANTI semakin mantap melangkah untuk
+                                mendorong swasembada pangan dan energi nasional.
+                            </p>
+                            <p>
+                                Percepatan swasembada pangan nasional tersebut perlu didukung
+                                dengan Inovasi teknologi modern sebagai tuntutan perkembangan
+                                zaman yang harus ditransformasikan kepada petani dan nelayan.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-lg-8">
-                        <p>Koperasi Jasa Gerakan Nelayan Tani Indonesia disingkat
+                </div>
+            </div>
+            <div class="container">
+                <div class="row my-5 text-center">
+                    <div class="col-md-10 mx-auto">
+                        <h5 class="my-md-5" style="font-weight:100;">
+                            Koperasi Jasa Gerakan Nelayan Tani Indonesia disingkat
                             KOPJAGANTI, didirikan dengan Akte Notaris Vivi Novita
                             Ranadireksa, SH. MKn. Nomor 28 tanggal 9 April 2016; dan akta
                             perubahan Nomor 05 tanggal 03 Juli 2018 dan disahkan dengan
                             Surat Keputusan Menteri Koperasi-UKM No. 001329/ BH/M.
-                            KUKM.2/V/2016 tanggal 4 Mei 2016.</p>
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            KOPJAGANTI lahir didorong oleh Partai Demokrasi Indonesia
-                            (PDI) Perjuangan dengan tujuan untuk menjadi mitra kerja
-                            Pemerintah Indonesia dalam meningkatkan kesejahteraan hidup
-                            masyarakat yang bekerja disektor Pertanian dan Perikanan.
-                        </p>
-                        <p>
-                            KOPJAGANTI merupakan lembaga otonom dari Organisasi
-                            Masyarakat Gerakan Nelayan Tani Indonesia (GANTI), yang
-                            merupakan bagian dari Komunitas Juang dari PDI-Perjuangan,
-                            yang peduli terhadap peningkatan produksi pangan, khususnya
-                            komoditas strategis seperti beras, jagung, kedelai, gula, daging,
-                            ikan, sayuran, buah-buahan, minyak goreng dan garam secara
-                            efisien, adil dan berkelanjutan, melalui intensifikasi, ekstensifikasi
-                            dan diversifikasi.
-                        </p>
-                        <p>
-                            Potensi georafis Indonesia yang memiliki kekayaan sumberdaya
-                            alam melimpah di sektor kelautan dan pertanian tersebut
-                            menjadikan KOPJAGANTI semakin mantap melangkah untuk
-                            mendorong swasembada pangan dan energi nasional.
-                        </p>
-                        <p>
-                            Percepatan swasembada pangan nasional tersebut perlu didukung
-                            dengan Inovasi teknologi modern sebagai tuntutan perkembangan
-                            zaman yang harus ditransformasikan kepada petani dan nelayan.
-                        </p>
+                            KUKM.2/V/2016 tanggal 4 Mei 2016.
+                        </h5>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="visiMisi">
+        <section id="visiMisi" class="bg-light">
             <div class="container">
-    
-                <h4 class="text-center">Visi</h4>
+                <div class="title">Visi</div>
                 <p class="text-center">VISI KOPJAGANTI adalah menjadi sebuah Koperasi Jasa yang
                     terbesar, terkuat dan memiliki aset yang paling bernilai di dunia.</p>
-                <h4 class="text-center">Misi</h4>
-                <div class="row">
-    
+                <div class="title mt-5">Misi</div>
+                <div class="row text-center">
                     <div class="col-lg-6">
                         <p>
                             Menjadi mitra kerja Pemerintah yang
@@ -141,13 +137,66 @@
                             (3-5 tahun).
                         </p>
                     </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Merangkul, memfasilitasi dan
+                            membangun wadah kerjasama dan integrasi diantara koperasikoperasi
+                            di Indonesia, dan menyediakan dukungan yang solid dan
+                            menyeluruh untuk meningkatkan skala usahanya.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Memimpin anggota dan keluarganya
+                            untuk bekerja keras dan kerja pintar demi menuju kualitas
+                            kehidupan yang lebih sejahtera, dalam waktu yang relatif singkat
+                            (3-5 tahun).
+                        </p>
+                    </div>
+    
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
                 </div>
             </div>
         </section>
-        <section id="strukturOrganisasi">
+        <section id="kompetensi">
             <div class="container">
+                <div class="title mb-5">Kompetensi</div>
                 <div class="row text-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
+                        <img src="./assets/img/icon/icon-fasilitator.png" alt="kjg-fasilitator" class="img-fluid">
+                        <h4>Lembaga Fasilitator </h4>
+                        <p>Sebagai lembaga fasilitator bagi nelayan dan petani dalam
+                            mengakses KUR di bank dan non bank</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/img/icon/icon-handshake.png" alt="kjg-mitra" class="img-fluid">
+                        <h4>Pembangun Kemitraan</h4>
+                        <p>Membangun kemitraan bisnis produksi skala nasional dan global
+                            dalam mendukung kemandirian usaha nelayan dan pertanian;</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/img/icon/icon-card.png" alt="kjg-card" class="img-fluid">
+                        <h4>Smart Card</h4>
+                        <p>Meningkatkan kemampuan nelayan dan petani dalam
+                            memanfaatkan smart card untuk mendukung kemudahaan
+                            bertransaksi bisnis</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./assets/img/icon/icon-mitra.png" alt="kjg-sdm" class="img-fluid">
+                        <h4>Pengembangan Sumber&nbsp;Daya</h4>
+                        <p>Meningkatkan kapasitas sumber daya insani yang mampu
+                            menguasai manajemen produksi, pemasaran dan akses
+                            permodalan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="strukturOrganisasi" class="bg-light">
+            <div class="container">
+                <div class="title mb-5">Pengurus</div>
+                <div class="row text-center">
+                    <div class="col-md-12 mb-4">
                         <h5>
                             Ketua Umum
                         </h5>
@@ -155,7 +204,7 @@
                             H. Dadang Mishal Yofthie, SH. MM.
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 mb-4">
                         <h5>
                             Wakil Ketua I
                         </h5>
@@ -163,7 +212,7 @@
                             Ir. Widhi Handoko
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 mb-4">
                         <h5>
                             Wakil Ketua II
                         </h5>
@@ -171,7 +220,7 @@
                             Ir. Tengku Irvan Bahran
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-12 mb-4">
                         <h5>
                             Sekretaris Umum
                         </h5>
@@ -179,7 +228,7 @@
                             Ir. Ermansyah Nurhayadi
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 mb-4">
                         <h5>
                             Sekretaris I
                         </h5>
@@ -187,7 +236,7 @@
                             Drs. Sutrisno, M.Si
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 mb-4">
                         <h5>
                             Sekretaris II
                         </h5>
@@ -195,15 +244,15 @@
                             Ir. Wisnu Hermawan
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-12 mb-4">
                         <h5>
-                            Bendahara Umum 
+                            Bendahara Umum
                         </h5>
                         <h4>
                             Ir. Tony Candra
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-12 mb-4">
                         <h5>
                             Bendahara I
                         </h5>
@@ -212,8 +261,9 @@
                         </h4>
                     </div>
                 </div>
+                <div class="title my-5">Pengawas</div>
                 <div class="row text-center">
-                    <div class="col-lg-4">
+                    <div class="col-md-6">
                         <h5>
                             Ketua
                         </h5>
@@ -221,7 +271,7 @@
                             Prof. Dr. Ir. Rokhmin Dahuri, MS
                         </h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6">
                         <h5>
                             Sekretaris
                         </h5>
@@ -232,27 +282,106 @@
                 </div>
             </div>
         </section>
-        <section id="kompetensi">
+        <section id="mitraKerja">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-3">
-                        <img src="./img/iconfinder_Icon_Connecting_People_3319485.png" alt="" class="img-fluid">
-                        <p>Lembaga Fasilitator</p>
+                <div class="title mb-5">Mitra Kerja</div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <!-- <div class="col-md-3 mx-auto mb-4"><img src="./assets/img/partners/logo_garuda.png" alt="" class="img-fluid"></div> -->
+                    <div class="col-md-8 mx-auto mt-3 mb-5"><img src="./assets/img/partners/logo_kemenkop.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-md-4 mb-5"><img src="./assets/img/partners/logo_kp.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-4 mb-5"><img src="./assets/img/partners/logo_kkp.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-4 mb-5"><img src="./assets/img/partners/logo_kemendes.png" alt="" class="img-fluid"></div>
+    
+                </div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-md-3 mx-auto mb-5"><img src="./assets/img/partners/logo_bni.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-3 mx-auto mb-5"><img src="./assets/img/partners/logo_bri.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-3 mx-auto mb-5"><img src="./assets/img/partners/logo_btpn.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center">
+    
+                    <div class="col-md-3 mb-5"><img src="./assets/img/partners/logo_pdb.png" alt="" class="img-fluid"></div>
+                    <div class="col-md-3 mb-5"><img src="./assets/img/partners/logo_bum.png" alt="" class="img-fluid"></div>
+                </div>
+            </div>
+        </section>
+        <section id="aktivitas" class="bg-light">
+            <div class="container">
+                <div class="title mb-5">Aktivitas</div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/img/Banner.jpg" alt="Card image cap">
+                        <div class="card-body">
+    
+                            <p class="card-text">Launching Desa Terang dilaksanakan di desa Kerawansasi, Kec. Natar Lampung
+                                Selatan Lounching dilakukan oleh Ketua Umum Kopja Ganti Bapak Dadang Mishal
+                                Yofthie, SH dan Menteri Koperasi dan UKM Bapak AA. Puspa Yoga, tanggal 15
+                                September 2018</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">15 September 2018</small>
+                        </div>
                     </div>
-                    <div class="col-lg-3">
-                        <img src="./img/iconfinder_Icon_Connecting_People_3319485.png" alt="" class="img-fluid">
-                        <p>Pembangun Kemitraan</p>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
                     </div>
-                    <div class="col-lg-3">
-                        <img src="./img/iconfinder_Icon_Connecting_People_3319485.png" alt="" class="img-fluid">
-                        <p>Smart Card</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="./img/iconfinder_Icon_Connecting_People_3319485.png" alt="" class="img-fluid">
-                        <p>Pengembangan Sumber Daya</p>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="kontak">
+            <footer>
+                    <div class="container">
+                       
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <div class="d-flex">
+                                                <i class="fas fa-building mt-2 mr-3"></i>
+                                                <address>Jl. TB. Simatupang Gd. Manhattan Square<br/>Kav.1 Blok S, Lantai 23<br/>Jakarta
+                                                        Selatan</address>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="fas fa-phone mt-2 mr-3"></i>
+                                                <a href="tel:+622129407182">021-29407182</a>
+                                            </div>
+                                            <div class="d-flex">
+                                                <i class="fas fa-envelope mt-2 mr-3"></i>
+                                                <a href="mailto:info@kjg-id">info@kjg-id</a>
+                                                <p></p>
+                                            </div>
+                                </div>
+
+                                <div class="col-md-6 text-right">
+                                        <div class="title">
+                                                Koperasi Jasa<br/>Gerakan Nelayan Tani Indonesia<br/>(KOPJA GANTI)
+                                        </div>
+                                    <small>&copy;2018 KOPJA GANTI</small>
+                                </div>
+                            </div>
+                        </div>
+            </footer>
+            
         </section>
     </div>
 
