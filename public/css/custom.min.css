@@ -12,6 +12,13 @@ nav.navbar .container {
   -webkit-transition: max-width 0.25s;
   transition: max-width 0.25s;
 }
+.navbar-light .navbar-toggler {
+  padding: 0;
+  border: none;
+}
+.navbar-light .navbar-toggler:focus {
+  outline: none;
+}
 .navbar-expand-lg .navbar-collapse {
   width: 100%;
 }
@@ -186,5 +193,43 @@ footer .title {
 @media (min-width: 1200px) {
   section:not(#kompetensi) .container {
     max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+  }
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.35s ease;
+    -o-transition: left 0.35s ease;
+    -moz-transition: left 0.35s ease;
+    transition: left 0.35s ease;
+    left: 100%;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.35s ease-out;
+    -o-transition: left 0.35s ease-out;
+    -moz-transition: left 0.35s ease-out;
+    transition: left 0.35s ease-out;
+  }
+  .nav-close {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    padding: 0;
+    font-size: 1.75rem;
   }
 }
