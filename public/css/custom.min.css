@@ -43,6 +43,10 @@ nav.navbar .container {
   -moz-box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.6);
   box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.6);
 }
+#content {
+    position: relative;
+    top: 6.625rem;
+  }
 h1 {
   font-weight: 600;
 }
@@ -85,6 +89,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .btn-radius:hover,
 .btn-radius:focus {
@@ -92,6 +97,7 @@ h1 {
   color: #e51d23;
   text-decoration: none;
   box-shadow: none;
+  outline: none;
 }
 section:not(#latarBelakang):not(#coverPage),
 .section-latar-belakang {
@@ -181,7 +187,6 @@ footer .title {
   }
 
   #content {
-    position: relative;
     top: 18.125rem;
   }
 
@@ -194,6 +199,23 @@ footer .title {
   section:not(#kompetensi) .container {
     max-width: 960px;
   }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        height: 20rem;
+    }
+    .carousel-inner, .carousel-item, .carousel-item img {
+        height: 100%;
+    }
+    .carousel-item img {
+        object-fit: cover;
+        object-position: right;
+    }
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+        margin: .5rem 0 2rem;
+    }
 }
 
 @media (max-width: 991px) {
